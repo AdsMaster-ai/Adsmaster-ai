@@ -1,6 +1,5 @@
-node_modules
-my-app/
 .next/
+my-app/
 .vscode/
 .env.local
 node_modules/
