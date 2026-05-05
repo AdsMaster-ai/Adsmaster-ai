@@ -1,0 +1,39 @@
+{
+  "name": "adsmaster-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.82.0",
+    "@google/generative-ai": "^0.24.1",
+    "@next/font": "^14.2.15",
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.104.0",
+    "@tailwindcss/postcss": "^4.2.2",
+    "axios": "^1.15.0",
+    "chart.js": "^4.5.1",
+    "cheerio": "^1.2.0",
+    "google-ads-api": "^23.0.0",
+    "lucide-react": "^1.7.0",
+    "next": "latest",
+    "openai": "^6.34.0",
+    "razorpay": "^2.9.6",
+    "react": "latest",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "latest",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6.0.2"
+  }
+}
