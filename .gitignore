@@ -3,3 +3,4 @@ my-app/
 .vscode/
 .env.local
 node_modules/
+.next/
