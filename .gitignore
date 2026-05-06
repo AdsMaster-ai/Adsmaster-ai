@@ -4,3 +4,4 @@ my-app/
 .env.local
 node_modules/
 .next/
+.vercel
