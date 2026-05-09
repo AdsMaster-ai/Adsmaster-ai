@@ -15,6 +15,7 @@
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.104.0",
     "@tailwindcss/postcss": "^4.2.2",
+    "@types/react-dom": "^19.2.3",
     "axios": "^1.15.0",
     "chart.js": "^4.5.1",
     "cheerio": "^1.2.0",
@@ -23,9 +24,9 @@
     "next": "latest",
     "openai": "^6.34.0",
     "razorpay": "^2.9.6",
-    "react": "latest",
+    "react": "^19.2.6",
     "react-chartjs-2": "^5.3.1",
-    "react-dom": "latest",
+    "react-dom": "^19.2.6",
     "recharts": "^2.15.4"
   },
   "devDependencies": {
