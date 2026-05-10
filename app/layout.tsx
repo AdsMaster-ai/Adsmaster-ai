@@ -4,8 +4,8 @@ export const metadata = {
   title: "AdsMaster AI",
   description: "AI Powered Google Ads Automation Platform",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/favicon.png",
+    apple: "/icon.png",
   },
 };
 
