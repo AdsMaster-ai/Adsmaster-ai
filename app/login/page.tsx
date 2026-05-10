@@ -127,18 +127,8 @@ export default function LoginPage() {
             <div className="lg-panel">
               <h1 style={S.title}>Welcome back</h1>
               <p style={S.subtitle}>Sign in to your account to continue</p>
-
-              <button className="lg-goog" style={S.googleBtn} onClick={handleGoogle}>
-                <GoogleIcon /> Continue with Google
-              </button>
-
-              <div style={S.orRow}>
-                <div style={S.orLine} />
-                <span style={S.orText}>or sign in with email</span>
-                <div style={S.orLine} />
-              </div>
-
-              {error && <div style={S.errorBox}>⚠️ {error}</div>}
+          
+                        {error && <div style={S.errorBox}>⚠️ {error}</div>}
 
               <Field label="Email address" type="email" value={email}
                 onChange={setEmail} placeholder="you@company.com" onKeyDown={onKeyDown} />

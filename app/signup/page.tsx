@@ -263,7 +263,7 @@ export default function SignupPage() {
                   const active = perms[p.id];
                   return (
                     <div key={p.id}
-                      className={`perm-card${p.required ? " perm-req" : ""}`}
+                      className={perm-card${p.required ? " perm-req" : ""}}
                       onClick={() => togglePerm(p.id, p.required)}
                       style={{
                         ...S.permCard,
