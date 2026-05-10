@@ -28,7 +28,7 @@ export default function GoogleAdsConnect() {
 
   return !connected ? (
     <button onClick={handleConnect} style={styles.btn}>
-      Connect Google Ads
+      Connect With Ads
     </button>
   ) : (
     <div style={styles.connected}>
