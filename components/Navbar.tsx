@@ -5,13 +5,7 @@ import { useRouter } from "next/navigation";
 import GoogleAdsConnect from "../components/GoogleAdsConnect";
 
 // ── Icon Components ──────────────────────────────────────────────
-const Logo = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-    <rect width="32" height="32" rx="8" fill="#6366f1" />
-    <path d="M8 22L14 10L20 18L24 14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="24" cy="14" r="2.5" fill="#a5f3fc" />
-  </svg>
-);
+
 
 const ChevronDown = ({ open }: { open: boolean }) => (
   <svg

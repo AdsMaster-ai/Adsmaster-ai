@@ -1,12 +1,10 @@
-import React from 'react';
-
 export default function RefundPolicy() {
   return (
     <div className="max-w-4xl mx-auto p-6 text-gray-800 leading-relaxed font-sans">
       <h1 className="text-3xl font-bold mb-6 text-gray-900">Refund Policy</h1>
       
       <p className="mb-4">
-        AdsMaster AI ("we", "our", "us") operates a strict no-refund policy for all subscription plans. 
+        AdsMaster ("we", "our", "us") operates a strict no-refund policy for all subscription plans. 
         This policy explains our stance on payments and cancellations.
       </p>
 
