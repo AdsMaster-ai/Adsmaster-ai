@@ -46,24 +46,7 @@ export default function LoginPage() {
   };
 
   // ── Google OAuth ───────────────────────────────────────────────
-  const handleGoogle = async () => {
-    setError("");
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}/campaign-creator`,
-        scopes: [
-          "email",
-          "profile",
-          "openid",
-          "https://www.googleapis.com/auth/adwords",
-          "https://www.googleapis.com/auth/analytics.readonly",
-        ].join(" "),
-        queryParams: { access_type: "offline", prompt: "consent" },
-      },
-    });
-    if (error) setError(error.message);
-  };
+  
 
   // ── Password reset ─────────────────────────────────────────────
   const handleReset = async () => {
@@ -161,16 +144,9 @@ export default function LoginPage() {
               <p style={S.subtitle}>Sign in to your account to continue</p>
 
               {/* Google */}
-              <button className="lg-goog" style={S.googleBtn} onClick={handleGoogle}>
-                <GoogleIcon />
-                Continue with Google
-              </button>
+              
 
-              <div style={S.orRow}>
-                <div style={S.orLine} />
-                <span style={S.orText}>or sign in with email</span>
-                <div style={S.orLine} />
-              </div>
+              
 
               {/* Error */}
               {error && <div style={S.errorBox}><span>⚠️</span> {error}</div>}
@@ -572,20 +548,7 @@ footerText: {
 //     }
 //   };
 
-//   const handleGoogle = async () => {
-//     await supabase.auth.signInWithOAuth({
-//       provider: "google",
-//       options: {
-//         redirectTo: `${window.location.origin}/`,
-//         scopes: [
-//           "email", "profile",
-//           "https://www.googleapis.com/auth/adwords",
-//           "https://www.googleapis.com/auth/analytics",
-//           "https://www.googleapis.com/auth/analytics.readonly",
-//         ].join(" "),
-//       },
-//     });
-//   };
+//   
 
 //   const handleReset = async () => {
 //     if (!resetEmail) { setError("Email daalo"); return; }
