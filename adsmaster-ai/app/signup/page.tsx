@@ -151,25 +151,7 @@ export default function SignupPage() {
   };
 
   // ── Google OAuth ─────────────────────────────────────────────────
-  const handleGoogle = async () => {
-    setError("");
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}/campaign-creator`,
-        scopes: [
-          "email",
-          "profile",
-          "openid",
-          "https://www.googleapis.com/auth/adwords",
-          "https://www.googleapis.com/auth/analytics.readonly",
-          "https://www.googleapis.com/auth/drive.readonly",
-        ].join(" "),
-        queryParams: { access_type: "offline", prompt: "consent" },
-      },
-    });
-    if (error) setError(error.message);
-  };
+  
 
   const togglePerm = (id: string, required: boolean) => {
     if (required) return;
@@ -286,9 +268,7 @@ export default function SignupPage() {
               <h1 style={S.title}>Create your account</h1>
               <p style={S.subtitle}>Start free — no credit card required</p>
 
-              <button className="su-goog" style={S.googleBtn} onClick={handleGoogle}>
-                <GoogleIcon /> Continue with Google
-              </button>
+              
 
               <div style={S.orRow}>
                 <div style={S.orLine} />
@@ -710,22 +690,7 @@ const S: Record<string, React.CSSProperties> = {
 //     }
 //   };
 
-//   const handleGoogle = async () => {
-//     await supabase.auth.signInWithOAuth({
-//       provider: "google",
-//       options: {
-//         redirectTo: `${window.location.origin}/`,
-//         scopes: [
-//           "email",
-//           "profile",
-//           "https://www.googleapis.com/auth/adwords",
-//           "https://www.googleapis.com/auth/analytics",
-//           "https://www.googleapis.com/auth/analytics.readonly",
-//           "https://www.googleapis.com/auth/drive.readonly",
-//         ].join(" "),
-//       },
-//     });
-//   };
+//   
 
 //   return (
 //     <div style={styles.page}>
