@@ -12,6 +12,7 @@ export default function TermsOfService() {
         .tct:hover{background:rgba(99,102,241,.12)!important;border-color:rgba(99,102,241,.4)!important}
         a{color:#818cf8;text-decoration:underline;text-underline-offset:3px}
         a:hover{color:#c7d2fe}
+        
         @media(max-width:680px){
           .tpg{grid-template-columns:1fr!important}
           .tsb{padding-left:0!important}
